@@ -1,0 +1,1488 @@
+:root {
+  --purple: #8c38ff;
+  --darkwaterBlue: #0f292f;
+  --poppingPink: #cb2d6f;
+  --accentBlack: #2d283e;
+  --promisingPurple: #281941;
+  --tiktokBlue: #74f0ed;
+  --tiktokPink: #ea445a;
+  --tiktokPinkwarm: #ea445ad3;
+  --shiningYellow: #fdd935;
+  --grapeGreen: #a6aa35;
+  --peach: #faa88b;
+  --warmPeach: #eb716a;
+  --warmPeachcold: #eb706ab9;
+  --pinkypeach: #f9d4e6;
+  --mint: #99edc3;
+  --seafoam: #3ded97;
+  --navbarPurple: #54005d;
+  --GAorange: #ff9f59;
+  --GAcream: #e7d6d0;
+  --darkOrange: #d43f10;
+  --searchgreen: #76cebf;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+/*       Individual Pages css i.e. background selection     -start-      */
+
+/*   Index / carousel     */
+
+#index-page {
+  background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.c-img {
+  border-bottom: 3px solid;
+  border-color: var(--accentBlack);
+}
+
+.carousel-control-prev-icon{
+
+  width: 200px;
+  height: 200px;
+
+}
+.carousel-control-next-icon{
+
+  width: 200px;
+  height: 200px;
+
+}
+
+.carousel-indicators .active{
+  background-color: var(--warmPeach);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+  /*  About us css        */
+
+#about-page {
+  background: url("assets/aboutpageBG.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us-text{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
+.about-us-text h2{
+  color: antiquewhite;
+}
+
+
+
+.cadence-color{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.rhythm-color{
+  text-decoration: none;
+  color: var(--warmPeachcold);
+}
+.melody-color{
+  text-decoration: none;
+  color: var(--poppingPink);
+}
+.music-form-color{
+  text-decoration: none;
+  color: var(--poppingPink);
+}
+
+.about-us-img img{
+  width: 20rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#about-img{
+  border-width: 3px solid;
+  border-color: green;
+}
+
+#about-us-contact-info{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
+#contact-info-colors{
+  color: var(--poppingPink);
+
+}
+
+/*     Products page css           */
+#products-page {
+    background: url("assets/productsBG.png") rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#product-card{
+  margin-top: 20px;
+  border: 1px solid;
+  border-color: var(--warmPeach);
+  background-color: var(--darkwaterBlue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+#product-img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid black;
+}
+
+
+#card-body{
+  border-top: 1px solid;
+  border-color: var(--warmPeach);
+  background-color: var(--accentBlack);
+}
+#products-names{
+  color: var(--tiktokPinkwarm);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+#product-genre{
+  color: antiquewhite;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#product-price{
+  color: var(--mint);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#product-reviews{
+  color: var(--pinkypeach);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#add-basket-btn{
+  color: pink;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*  Individual Product page code      */
+
+#product-page-body{
+  background: url("assets/productPageBG.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#product-page-card{
+  margin-top: 70px;
+  background-color: var(--tiktokPinkwarm);
+  border: 3px solid;
+  border-color: var(--accentBlack);
+
+  width: 580px;
+  height: 750px;
+  color: white;
+
+}
+
+#product-page-product-name{
+  border-bottom: var(--tiktokPinkwarm) 1px solid;
+  color: var(--poppingPink);
+  text-align: center;
+  margin-top: 10px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#product-type{
+  color: var(--warmPeach);
+  border-top: 3px solid;
+  border-color: var(--warmPeach);
+}
+#product-description{
+  color: var(--tiktokBlue);
+}
+
+.product-container{
+  margin-top: 35px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--accentBlack);
+
+}
+
+
+.product-container img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid;
+  border-color: black;
+}
+
+
+
+
+.product-page-info{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#product-page-button{
+ justify-content: center;
+}
+
+#product-add-basket-btn{
+  color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+#continue-shopping-product{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+  text-align: center;
+  height: 25px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+  background-color: var(--tiktokPinkwarm);
+  border-color: var(--tiktokPinkwarm);
+  align-content: center;
+  text-align: center;
+}
+
+#continue-shopping-product a{
+  color: whitesmoke;
+}
+
+
+/* Comments Section */
+#comments-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: transparent; /* Set background color to transparent */
+  border-radius: 10px;
+  max-width: 800px; /* Set a specific maximum width */
+  margin: 0 auto; /* Center align the comment section horizontally */
+  text-align: center; /* Center align the content inside the comment section */
+}
+
+
+.comment {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: var(--peach); /* Change the background color to black */
+  border: 10px solid var(--darkwaterBlue);
+  border-radius: 5px;
+  color: var(--mint);
+}
+
+.comment .comment-content,
+.comment .comment-date {
+  color: white;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.comment-card-body {
+  background-color: var(--accentBlack); /*  Changes colour of body  */
+}
+
+
+.comment p {
+  margin-bottom: 10px;
+  color: black;
+
+}
+
+.comment-info {
+  margin-top: 10px;
+}
+
+.comment-info .main-comment-author {
+  font-weight: bold;
+  color:#0080FF;
+  font-size: 20px;
+}
+
+
+.comment-date {
+  font-size: 16px;
+}
+
+.comment-actions {
+  margin-top: 10px;
+}
+
+.comment-delete-button {
+  padding: 5px 10px;
+  background-color: var(--);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.comment-delete-button:hover {
+  background-color: var(--shiningYellow);
+}
+
+.comment-delete-button {
+  min-width: 100px;
+}
+
+.add-comment-form {
+  margin-top: 20px;
+}
+
+.add-comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form {
+  margin-top: 50px;
+}
+
+.comment-form h3,
+.comments-section h3 {
+  color: var(--poppingPink);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.comment-form label {
+  color: var(--tiktokBlue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.comments-section p {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.comments-section p.login-message {
+  color: var(--bs-white);
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid var(--accentBlack);
+  border-radius: 5px;
+  resize: none;
+}
+
+.comment-form button {
+  margin-top: 10px;
+  background-color: var(--tiktokPink);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+
+/* Navbar Code */
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    var(--navbarPurple),
+    var(--warmPeachcold)
+  );
+}
+
+.accountNavBar p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto 0;
+    font-size: 14px;
+}
+/* Navbar Code */
+#search-bar {
+  background-color: var(--GAcream);
+ border-width: medium;
+  border-color: var(--accentBlack);
+}
+
+#navbar-test {
+  background: url(assets/bg.png);
+}
+
+#navbar-search-btn {
+  background-color: var(--GAcream);
+  border-width: 10px;
+
+}
+#navbar-search-btn div{
+  transform: rotate(-45deg);
+  margin-top: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+
+}
+
+.NavBarSearchDiv{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+#main-word {
+  color: antiquewhite;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: var(--darkOrange);
+}
+
+#login-pill {
+  background-color: var(--tiktokPinkwarm);
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#logout-pill {
+  background-color: var(--bs-red);
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#sign-pill {
+  background-color: var(--warmPeachcold);
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#basketPill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accentBlack);
+  border-width: 3px;
+  border-color: var(--darkOrange);
+}
+#basket-icon{
+  color: var(--mint);
+}
+
+#about-nav{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#nav-words{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#nav-bottom-border{
+  border-bottom: 3px solid;
+  border-color: var(--accentBlack) ;
+}
+
+.account-username{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+.account-username a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
+/* Navbar Css end */
+
+/*  Login Page css till line 264 */
+#login-page {
+  background: url(assets/loginBG.png) rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.log-box {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #281941;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.log-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--poppingPink),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.log-box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--poppingPink),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.LoginBorderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.LoginBorderLine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--purple),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.LoginBorderLine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--purple),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.log-box form {
+  position: absolute;
+  inset: 6px;
+  background: var(--accentBlack);
+  padding: 50px 40px;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-box form h2 {
+  color: antiquewhite;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+.log-box form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 30px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.log-box form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--accentBlack);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.log-box form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.log-box form .inputBox input:valid ~ span,
+.log-box form .inputBox input:focus ~ span {
+  color: white;
+  font-size: 0.75em;
+  transform: translateY(-32px);
+}
+
+.log-box form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.log-box form .inputBox input:valid ~ i,
+.log-box form .inputBox input:focus ~ i {
+  height: 44px;
+}
+
+.log-box form .extraLogInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.log-box form .extraLogInfo a {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: white;
+  text-decoration: none;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.log-box form .extraLogInfo a:hover,
+.log-box form .extraLogInfo a:nth-child(2) {
+  color: white;
+}
+
+.log-box form input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.log-box form input[type="submit"]:active {
+  color: var(--tiktokPink);
+  border-color: #281941;
+  opacity: 0.8;
+}
+
+/* End of Login Page CSS */
+
+/* Sign Up page Begin */
+
+#signup-page {
+  background: url(assets/signBG.png) rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signUpBox {
+  position: relative;
+  width: 380px;
+  height: 520px;
+  background: #281941;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.signUpBox::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--seafoam),
+    var(--tiktokBlue),
+    var(--tiktokBlue)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+}
+
+.signUpBox::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--seafoam),
+    var(--tiktokBlue),
+    var(--tiktokBlue)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.signUpBorderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.signUpBorderLine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--pinkypeach),
+    var(--warmPeach),
+    var(--peach)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.signUpBorderLine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--pinkypeach),
+    var(--warmPeach),
+    var(--peach)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+.signUpBox form {
+  position: absolute;
+  inset: 6px;
+  background: var(--accentBlack);
+  padding: 50px 40px;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.signUpBox form h2 {
+  color: antiquewhite;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+.signUpBox form .inputBox {
+  display: flex;
+  position: relative;
+  width: 300px;
+  margin-top: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#signUpRegisterBtn{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--warmPeachcold);
+  border: 1px solid;
+  border-color: var(--mint);
+}
+
+.signUpBox form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--accentBlack);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+
+}
+
+.signUpBox form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.signUpBox form .inputBox input:valid ~ span,
+.signUpBox form .inputBox input:focus ~ span {
+  color: white;
+  font-size: 0.75em;
+  transform: translateY(-32px);
+}
+.signUpBox form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signUpBox form .inputBox input:valid ~ i,
+.signUpBox form .inputBox input:focus ~ i {
+  height: 44px;
+}
+.signUpBox form .extraSignUp {
+  display: flex;
+  justify-content: space-between;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.signUpBox form .extraSignUp a {
+  margin: 10px 0;
+  font-size: 0.95em;
+  color: white;
+  text-decoration: none;
+}
+.signUpBox form .extraSignUp a:hover,
+.signUpBox form .extraSignUp a:nth-child(2) {
+  color: white;
+}
+.signUpBox form input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  width: 100px;
+  margin-top: 1px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.signUpBox form input[type="submit"]:active {
+  color: var(--tiktokPink);
+  border-color: #281941;
+  opacity: 0.8;
+}
+
+/* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
+
+
+
+/*      Shopping cart CSS            */
+
+#shopping-cart-body{
+  background: url("assets/cartBG.png");
+  font-family: "fields", sans-serif;
+
+
+}
+.shopping-title{
+  margin-bottom: 5vh;
+}
+
+
+#shopping-card{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3rem;
+  border: transparent;
+
+  border-color: pink;
+}
+
+#shopping-words{
+  text-align: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--warmPeach);
+}
+
+#shopping-words b{
+  border-bottom: 1px solid;
+  border-color: var(--warmPeach);
+}
+
+
+.cart{
+  background-color: aliceblue;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.summary{
+  background-color: var(--promisingPurple);
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65);
+}
+.summary .col-2{
+  padding: 0;
+}
+.summary .col-10
+{
+  padding: 0;
+}.row{
+   margin: 0;
+ }
+
+.shopping-title b{
+  font-size: 1.5rem;
+}
+.main{
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+.col-2, .col{
+  padding: 0 1vh;
+}
+ #cart-continue-shopping a{
+  padding: 0 1vh;
+}
+
+ #cart-continue-shopping span{
+   margin-left: 10px;
+   text-align: center;
+   border-bottom: 1px solid;
+   border-color: var(--accentBlack);
+ }
+
+.close{
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+#cart-img{
+    width: 3.5rem;
+  border: 1px solid;
+  border-color: black;
+
+}
+#cart-continue-shopping{
+  margin-top: 4.5rem;
+
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+#shopping-words h5{
+    margin-top: 4vh;
+}
+#shopping-words hr{
+  margin-top: 1.25rem;
+}
+#shopping-cart-form form{
+  padding: 2vh 0;
+}
+#shopping-cart-form select{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  font-size: 0.76em
+;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+#cart-discount-input{
+  border: 2px solid var(--accentBlack);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+#cart-discount-input input:focus::-webkit-input-placeholder
+{
+  color:transparent;
+}
+
+#shopping-words .checkoutBtn {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+
+}
+
+
+
+#cart-continue-shopping a{
+  color: black;
+  text-decoration: none;
+}
+#cart-continue-shopping a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+#cart-discount-input{
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+}
+
+/*   Message displayed on the register page if there's a problem   */
+
+.message {
+  color: #FFFFFF;
+}
+
+
+
+
+/*    Media Stuff DO NOT MOVE  IT WILL MESS UP THE CODE           */
+
+
+@media screen and (max-width: 991px) {
+  .accountNavBar{
+    flex-direction: column;
+
+
+  }
+
+  .c-img{
+    object-fit: cover;
+    width: 1000px;
+  }
+
+  .accountNavBar p{
+    width: 100%;
+  }
+  .NavBarSearchDiv{
+    width: 100%;
+    justify-items: center;
+    padding-bottom: 10px;
+    gap: 3px;
+  }
+  #login-pill{
+    color: whitesmoke;
+    background-color: var(--tiktokPinkwarm);
+
+  }
+  #sign-pill{
+    color: whitesmoke;
+    background-color: var(--warmPeachcold);
+    border-width: 1px;
+    border-color: var(--accentBlack);
+    padding-bottom: 10px;
+  }
+
+  .basketBar{
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #basketPill{
+    background-color: var(--promisingPurple);
+    justify-content: center;
+    border-color: var(--darkOrange);
+    border-width: 3px;
+  }
+  #basket-icon{
+    color: var(--tiktokBlue);
+  }
+
+  .navbar {
+
+  }
+  #shopping-card{
+    margin: 3vh auto;
+
+  }
+  .cart{
+    padding: 4vh;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+  .summary{
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+
+/* Footer CSS start  */
+#index-footer{
+ background: url("assets/footerBG.png");
+}
+
+#rest-footer{
+
+  background: url("assets/footerBG.png");
+}
+#footer-useful{
+  color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-bottom: 1px solid;
+  border-color: var(--tiktokBlue);
+}
+
+.footer-list{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.footer-items{
+
+  margin-top: 30px;
+  text-decoration: none;
+  color: whitesmoke;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#footer-contact-us{
+  color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  border-bottom: 1px solid;
+  border-color: var(--tiktokBlue);
+}
+
+#footer-email-color{
+  color: var(--poppingPink);
+}
+
+#footer-copyright{
+  margin-top: 10px;
+  background-color: black;
+  height: 50px;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "fields", sans-serif;
+  font-weight: 70;
+  font-style: normal;
+}
+
+ 
+
+.body{
+  background: transparent !important;
+}
+
+.title{
+  font-family: Arial !important;
+  font-size: 26px !important;
+  color: #fff !important;
+}
+
+.subtitle{
+  font-family: Arial !important;
+  color: #fff !important;
+  font-size: 16px !important;
+}
+
+.heading_1{
+  font-family: Arial !important;
+            font-size: 20px !important;
+            color: #fff !important;
+}
+
+.heading_2{
+  font-family: Arial !important;
+  font-size: 18px !important;
+  color: #fff !important;
+}
+
+.body_text{
+  color: #fff !important;
+  font-size: 16px !important;
+  font-family: Arial !important;
+}
+
+.link{
+  color: #cb2d6f !important;
+  font-size: 16px !important;
+  font-family: Arial !important;
+  word-break: break-word !important;
+}
+
+.payment_container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+.input-group input {
+  flex: 1;
+  margin-right: 10px;
+}
+.input-group input:last-child {
+  margin-right: 0;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#payment-page {
+  background: url("assets/payment.jpg") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
